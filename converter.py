@@ -20,6 +20,7 @@ def usd_to_eur(usd):
     return usd*USD_TO_EUR
 def eur_to_usd(eur):
     return eur/USD_TO_EUR
+#funkcija izvēlnei
 def show_menu():
     print("1. Kilometri uz jūdzēm")
     print("2. Jūdzes uz kilometriem")
@@ -30,8 +31,9 @@ def show_menu():
     print("7. Dolāri uz eiro")
     print("8. Eiro uz dolāriem")
     print("9. Iziet")
-Show_menu()
-choice=input("Izvēlieties konversijas veidu (1-9): ")
+#izvēlne un ievade
+show_menu()
+choice=input("Izvēlieties konversijas veidu (1-8) iziet (9): ")
 Value=float(input("ievadi skaitli:"))
 if choice=="1":
     print(f"{Value} kilometri ir {km_to_miles(Value)} jūdzes.")
@@ -54,7 +56,7 @@ elif choice=="9":
 else:
     print("Nederīga izvēle. Lūdzu, izvēlieties ciparu no 1 līdz 9.")
 while True:
-    Show_menu()
+    show_menu()
     choice=input("Izvēlieties konversijas veidu (1-9): ")
     if choice=="9":
         print("Iziet no programmas.")
@@ -78,3 +80,4 @@ while True:
         print(f"{Value} eiro ir {eur_to_usd(Value)} dolāri.")
     else:
         print("Nederīga izvēle. Lūdzu, izvēlieties ciparu no 1 līdz 9.")
+
