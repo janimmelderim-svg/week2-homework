@@ -18,6 +18,11 @@ print(float1+float2)
 #Piešķiru 2 bool vērtības
 bool1=True
 bool2=False
+#vērtības tipi
+print(type(text1))
+print(type(skaitlis1))
+print(type(float1))
+print(type(bool1))
 #Truth / false pārbaude
 print(bool1 and bool2)
 print(bool(""))
