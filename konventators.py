@@ -14,18 +14,22 @@ conversion_type=input(">")
 if conversion_type not in ["1", "2", "3", "4"]:
     print("Nederīga izvēle. Lūdzu, izvēlieties ciparu no 1 līdz 4.")
     exit()
+#virziena izvēle
 print("virziens:")
 print("1. uz priekšu")
 print("2. uz atpakaļ")
 direction=input(">")
+#pārbaude vai izvēle ir derīga
 if direction not in ["1", "2"]:
     print("Nederīga izvēle. Lūdzu, izvēlieties ciparu no 1 līdz 2.")
     exit()
+#ievades pārbaude
 try:
     value=float(input("ievadi vērtību: "))
 except ValueError:
     print("Kļūda. Lūdzu, ievadiet skaitli.")
     exit()
+#konversija un rezultāta izvadīšana
 if conversion_type=="1":
     if direction=="1":
         result=value*KM_TO_MI
